@@ -17,22 +17,22 @@ program
   .parse(process.argv);
 
 function resolve(program) {
-	// 没有匹配任何选项的参数会被放到数组 args 中
-	const { copy, hashtag, slash, args } = program;
-	if (!args.length) {
-		console.log('Please input filename.');
-		return;
-	}
-	if (copy === true) {
-		console.log('You should copy at least one file.');
-		return;
-	}
-	let type = 'star';
-	if (slash) type = 'slash';
-	if (hashtag) type = 'hashtag';
-	for (let i = 0; i < args.length; i++) {
-		gen(args[i], copy, type);
-	}
+  // 没有匹配任何选项的参数会被放到数组 args 中
+  const { copy, hashtag, slash, args } = program;
+  if (!args.length) {
+  	console.log('Please input filename.');
+  	return;
+  }
+  if (copy === true) {
+  	console.log('You should copy at least one file.');
+  	return;
+  }
+  let type = 'star';
+  if (slash) type = 'slash';
+  if (hashtag) type = 'hashtag';
+  for (let i = 0; i < args.length; i++) {
+  	gen(args[i], copy, type);
+  }
 }
 
 resolve(program);
