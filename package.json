@@ -1,0 +1,25 @@
+{
+  "name": "create-file-cli",
+  "version": "0.0.4",
+  "description": "create files with some useful comment",
+  "main": "lib/generate-file.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "touchme": "bin/touchme.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/G-lory/create-file-cli.git"
+  },
+  "author": "G-lory",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/G-lory/create-file-cli/issues"
+  },
+  "homepage": "https://github.com/G-lory/create-file-cli#readme",
+  "dependencies": {
+    "commander": "^2.19.0"
+  }
+}
